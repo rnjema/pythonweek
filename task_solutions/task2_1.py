@@ -8,6 +8,8 @@ def guess():
     try:
         guessed = int(input("Enter guess (1-9): "))
     except ValueError as e:
+        print("Encounterd this error: ", e)
+        print("\n Please try again!\n")
         guess()
     else:
         return guessed
